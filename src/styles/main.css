@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#todo-form {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+#todo-list li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+body.theme-dark {
+    background: #181a1b;
+}
+.theme-dark .container {
+    background: #23272f;
+    color: #f4f4f4;
+}
+.theme-dark h1 {
+    color: #f4f4f4;
+}
+.theme-dark #todo-input, .theme-dark button {
+    background: #23272f;
+    color: #f4f4f4;
+    border: 1px solid #444;
+}
+.theme-dark button {
+    background: #444;
+}
+.theme-dark button:hover {
+    background: #222;
+}
+.theme-dark .delete-btn {
+    background: #b23c2b;
+}
+.theme-dark .delete-btn:hover {
+    background: #7a2417;
+}
+
+body.theme-invert {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body.theme-daltonic {
+    /* Colores amigables para daltónicos (ejemplo: protanopia) */
+    background: #f4f4f4;
+}
+.theme-daltonic .container {
+    background: #fff;
+    color: #222;
+}
+.theme-daltonic h1 {
+    color: #222;
+}
+.theme-daltonic .delete-btn {
+    background: #0072b2;
+}
+.theme-daltonic .delete-btn:hover {
+    background: #005fa3;
+}
+.theme-daltonic button {
+    background: #009e73;
+}
+.theme-daltonic button:hover {
+    background: #007a5e;
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}

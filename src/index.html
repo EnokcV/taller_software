@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de TODO - Taller Software</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <div class="theme-switcher">
+            <label for="theme-select">Tema:</label>
+            <select id="theme-select">
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+                <option value="invert">Colores Invertidos</option>
+                <option value="daltonic">Modo Daltónico</option>
+            </select>
+        </div>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Agrega una nueva tarea..." required>
+            <button type="submit">Agregar</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

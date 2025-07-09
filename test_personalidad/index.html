@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Personalidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flames"></div>
+        <h1>Test ¿Qué auto JDM eres?</h1>
+        <button id="theme-btn" type="button">Cambiar tema</button>
+        <div id="intro">
+            <p>Este test de personalidad consiste en 10 preguntas de opción múltiple sobre situaciones cotidianas. Al finalizar, recibirás un resultado que describe tu tipo de personalidad predominante según tus respuestas. ¡Responde con sinceridad y descubre más sobre ti!</p>
+            <button id="start-btn">Comenzar test</button>
+        </div>
+        <form id="quiz-form" class="hidden">
+            <div id="slideshow">
+                <div id="question-container"></div>
+                <div id="controls">
+                    <button type="button" id="prev-btn" disabled>Anterior</button>
+                    <button type="button" id="next-btn">Siguiente</button>
+                    <button type="submit" id="submit-btn" class="hidden">Ver resultado</button>
+                </div>
+            </div>
+        </form>
+        <div id="result" class="hidden"></div>
+        <div id="car-image" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
